@@ -1,5 +1,6 @@
 * {
-  background-color: #65b64f;
+  max-width: 1000px;
+  margin: auto;
 }
 
 h1 {
@@ -7,6 +8,7 @@ h1 {
   color: #004d73;
   font-size: 36px;
   text-align: center;
+  margin-top: 5px;
 }
 h2 {
   font-size: 18px;
@@ -15,12 +17,103 @@ h2 {
 nav {
   display: flex;
   position: sticky;
+  top: 0px;
   justify-content: flex-end;
-  background-color: white;
+  background-color: #dff8d5;
   padding: 10px;
+  margin-top: 0px;
+}
+p {
+  font-size: 16px;
 }
 
 nav a {
   padding: 0 20px;
-  background-color: white;
+  background-color: #dff8d5;
+  text-decoration: none;
+  color: inherit;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.birth {
+  font-family: "Roboto Mono", monospace;
+  padding-right: 25px;
+  color: #004d73;
+}
+
+section {
+  max-width: 1000px;
+  margin: auto;
+}
+.artist {
+  text-align: center;
+  padding: 35px;
+}
+.artist p {
+  line-height: 2;
+  padding-top: 5px;
+}
+
+fieldset {
+  margin: 20px;
+  text-align: center;
+}
+fieldset div {
+  padding: 15px;
+}
+
+legend {
+  border: solid 2px black;
+  padding: 12px;
+  border-radius: 5px;
+}
+label {
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  color: #57794b;
+}
+button {
+  background-color: #dff8d5;
+  padding: 15px;
+  border-radius: 4px;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+  margin-top: 70px;
+  width: 500px;
+}
+
+ul li {
+  padding: 20px;
+  text-align: left;
+  border: 2px #57794b solid;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+.images-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 15px;
+  padding-top: 35px;
+}
+
+.gallery-img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
 }
